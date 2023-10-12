@@ -1,0 +1,160 @@
+body{
+  font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif
+}
+
+#canvas {
+  height: 100%;
+  vertical-align: top;
+}
+
+.header-signup {
+  background-color: #5A287D;
+}
+
+.App {
+  font-family: "RNHouseSansRegular",sans-serif;
+}
+.purpleNav {
+  background-color: #3c1053;
+}
+.centerDiv{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.customList {
+  border: 1px solid #3c1053;
+  border-radius: 5px;
+  color: #3c1053;
+  cursor: pointer;
+  margin: 7px;
+}
+.customList:hover {
+  background-color: #3c1053;
+  border: 1px solid white;
+  color: white;
+}
+.customImage {
+  width: auto;
+  height: 200px;
+  overflow: hidden;
+}
+.customIcon {
+  margin-right: 8px;
+}
+.customText {
+  display: flex;
+  align-items: center;
+}
+.customLink {
+  text-decoration: dotted;
+  color: white;
+}
+.circleBound {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.circleBound:hover {
+  background-color: white;
+  color: #3c1053;
+}
+.customModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2;
+  padding: 20px;
+}
+.customContainer {
+  border: 1px solid #3c1053;
+  padding: 30px;
+  margin: 10px;
+}
+.centerSelf {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print {
+  .noPrint {
+    display: none;
+}
+}
+
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.customCard {
+  height: 200px;
+}
+
+.customCard:hover {
+  border: 1px dotted #3c1053;
+}
+.button{
+  background-color: #5A287D;
+  color: white;
+  height:40px;
+  width: 100px;
+  font-size: medium;
+}
+
+.h5{
+  color: red;
+  font-weight: lighter;
+}
+.redeemBox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(
+      rgba(231, 125, 225, 0.7),
+      rgba(226, 125, 125, 0.436)
+    ),
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
+  background-color: #3c1053;
+  background-size: cover;
+  background-position: center;
+}
+
+.redeemBox2{
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 2000px) and (min-width: 430px)  {
+  .redeemTextField{
+    width:300px;
+  }
+
+}
+
+
+
+
+@media (max-width: 429px)  {
+  .redeemTextField{
+    width:200px;
+  }
+  .redeemBox2{
+    padding: 0px 30px;
+  }
+
+}

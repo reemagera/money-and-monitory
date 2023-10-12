@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "email": "Ajata@mail.com",
+      "password": "123323",
+      "id": 1,
+      "balance": 1000.0
+    },
+    {
+      "email": "Wita@mail.com",
+      "password": "127438323",
+      "id": 2,
+      "balance": 750.5
+    },
+    {
+      "email": "hello1",
+      "password": "admin123",
+      "id": 3,
+      "balance": 500.75
+    },
+    {
+      "email": "hello2",
+      "password": "admin123",
+      "id": 4,
+      "balance": 1200.25
+    },
+    {
+      "email": "hello3",
+      "password": "admin123",
+      "id": 5,
+      "balance": 300.0
+    }
+    
+  ]
+}

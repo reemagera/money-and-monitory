@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {
+      "customerID": "12",
+      "account_Number": "13579",
+      "instant_accountNumber": "1245",
+      "accountBalance": "216",
+      "instant_accountBalance": "2",
+      "PIN": "2356",
+      "blocked": "false",
+      "id": 1
+    },
+    {
+      "customerID": "22",
+      "account_Number": "24680",
+      "instant_accountNumber": "1279",
+      "accountBalance": "317",
+      "instant_accountBalance": "12",
+      "PIN": "1498",
+      "blocked": "false",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+      - id: accounts
+        uri: lb://ACCOUNTS
+        predicates:
+          - Path=/accounts-api/**
+        filters:
+          - AuthenticationFilter
+#          - name: CircuitBreaker
+#            args:
+#              name: accounts
+#              fallbackuri: forward:/accountsFallBack
+
+      - id: transactions
+        uri: lb://TRANSACTIONS
+        predicates:
+          - Path=/transactions-api/**
+        filters:
+          - AuthenticationFilter
+#          - name: CircuitBreaker
+#            args:
+#              name: accounts
+#              fallbackuri: forward:/transactionsFallBack
+
+#      - id: signups
+#        uri: lb://SIGNUPS
+#        predicates:
+#          - Path=/api/v1/**
+#        filters:
+#          - AuthenticationFilter
+#          - name: CircuitBreaker
+#            args:
+#              name: accounts
+#              fallbackuri: forward:/signupsFallBack
+      - id: security-service
+        uri: lb://SECURITY-SERVICE
+        predicates:
+          - Path=/auth/**
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: hystrix.steam
+#
+#hystrix:
+#  command:
+#    fallbackcmd:
+#      execution:
+#        isolation:
+#          isolation:
+#            thread:
+#              timeoutInMilliseconds: 7000

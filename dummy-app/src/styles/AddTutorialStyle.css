@@ -1,0 +1,105 @@
+/* AddTutorialStyles.css */
+
+/* Navbar Styles */
+.navbarStyle {
+  width: 100%; /* Adjust as needed */
+  margin: auto;
+  background-color: #5A287D;
+  box-shadow: none;
+}
+
+/* Paper Styles */
+.paperStyle {
+  padding: 30px 20px;
+  width: 400px;
+  margin: 20px auto;
+}
+
+/* Header Styles */
+.headerStyle {
+  margin: 0;
+}
+
+/* Avatar Styles */
+.avatarStyle {
+  background-color: #ad1982;
+}
+
+/* Button Styles */
+.buttonStyle {
+  background-color: #ad1982;
+  margin: 15px 0px 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Content Navigation Styles */
+.contentnav {
+  background-color: #5A287D;
+  height: 72px;
+  width: 976px;
+  margin: auto;
+}
+
+/* Content Background Styles */
+.contentbg {
+  background-color: #5A287D;
+  height: 72px;
+  height: 100%;
+  margin: auto;
+}
+
+/* Cancel Button Styles */
+.cancelbutton {
+  border: 2px solid #ad1982;
+  border-radius: 4px;
+  background-color: #ad1982;
+  color: white;
+}
+
+/* Main Content Styles */
+.content {
+  width: 100%; /* Adjust as needed */
+  height: 100%;
+  margin: auto;
+}
+
+/* Main Heading Styles */
+.h1signup {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-bottom: 0px solid #B4A99F;
+  color: #42145F;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif;
+}
+
+/* Text After Main Heading Styles */
+.textafterh1signup {
+  font-size: 1em;
+  text-align: left;
+  color: #333333;
+  font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif;
+}
+
+/* Displayed Points Styles */
+.pointsdisplayed {
+  font-size: 1em;
+  text-align: left;
+  color: #333333;
+  font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif;
+}
+
+/* Demo Styles */
+.demo {
+  padding: 0 0 16px 16px;
+}
