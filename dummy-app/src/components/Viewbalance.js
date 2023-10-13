@@ -86,7 +86,7 @@ function ViewBalance() {
         <Container component="main" maxWidth="xs" sx={pageStyle}>
           <CssBaseline />
           <Box style={containerStyle}>
-              <Typography component="h2" variant="h5" sx={{marginLeft:'100px', color:'#5A287D', marginBottom:'20px'}}>
+              <Typography component="h2" variant="h5" sx={{ textAlign: 'center' , color:'#5A287D', marginBottom:'20px'}}>
                 View Balance
               </Typography>
                 {/* <TextField
@@ -136,13 +136,13 @@ function ViewBalance() {
                       Your Main Account Balance:
                     </Typography>
                     <Typography variant="h6" sx={{ color: "#5A287D" }}>
-                      ${balances.mainAccount}
+                      £{(balances.mainAccount).toFixed(2)}
                     </Typography>
                     <Typography variant="h6" sx={{ color: "#5A287D" }}>
                       Your Redeem Balance:
                     </Typography>
                     <Typography variant="h6" sx={{ color: "#5A287D" }}>
-                      ${balances.redeem}
+                    £{(balances.redeem).toFixed(2)}
                     </Typography>
                   </Box>
                 )}
